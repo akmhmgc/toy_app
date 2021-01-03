@@ -10,11 +10,5 @@
   <%= @user.email %>
 </p>
 
-<p>
-  <strong>First micro post:</strong>
-  # 最初のmicropostを表示する @user.micropostsでアクセスできる理由が不明 > おそらくActive Recordがなんとかしてくれている
-  <%= @user.microposts.first.content %>
-</p>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
